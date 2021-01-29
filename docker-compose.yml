@@ -1,2 +1,7 @@
-web:
-  image: tiago:expressapp
+version: "3.7"
+services: 
+  web:
+    image: tiago:expressapp
+    restart: always
+    ports: 
+      - "80:3000"
